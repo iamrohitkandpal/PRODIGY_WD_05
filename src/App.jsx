@@ -27,11 +27,12 @@ function App() {
   
 
   return (
-    <div className='w-full -full relative'>
-      <div className="text-center p-4">
+    <div className='w-full h-screen relative'>
+      <img src="./src/assets/Background Image.jpg" alt="" className="absolute z-[-1] w-full h-full object-cover" />
+      <div className="text-center z-[100] p-4">
         <input 
           type="text" 
-          className='py-3 px-6 w-[700px] text-lg rounded-3xl border border-gray-200 text-gray-600 placeholder:text-gray-400 focus:outline-none bg-white-600/100 shadow-md'  
+          className='py-3 px-6 w-[700px] mt-10 text-lg rounded-full text-black placeholder:text-gray-700 focus:outline-none bg-white/45 shadow-md'  
           value={location}
           placeholder='Enter the location' 
           onChange={(event) => setLocation(event.target.value)}

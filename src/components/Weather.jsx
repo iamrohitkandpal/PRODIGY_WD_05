@@ -5,9 +5,9 @@ const Weather = ({weatherData}) => {
   return (
     <div>
         {weatherData.weather ? (
-            <div className='w-[500px] h-[250px] bg-gray-300 shadow-lg rounded-xl m-auto relative px-6 top-[10%]'>
+            <div className='w-[500px] h-[250px] bg-gray-200/50 shadow-lg rounded-xl m-auto relative px-6 top-[20%] mt-5'>
                 <div className="flex justify-between w-full">
-                    <div className="w-1/2 my-4 mx-auto flex justify-between items-center">
+                    <div className="w-1/2 opacity-100 my-4 mx-auto flex justify-between items-center">
                         <div className="flex flex-col items-start justify-between h-full">
                             <div>
                                 <p className='text-xl'>
@@ -26,7 +26,7 @@ const Weather = ({weatherData}) => {
                         </div>
                         
                     </div>
-                    <div className="w-1/2 flex flex-col justify-between items-end">
+                    <div className="w-1/2 opacity-100 ml-10 flex flex-col justify-between items-end">
                             <div className="relative">
                                 <img src={`http://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`} className='w-[120px]' alt="Weather Icon" />
                             </div>
