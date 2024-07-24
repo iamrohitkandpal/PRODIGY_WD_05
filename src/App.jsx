@@ -32,7 +32,7 @@ function App() {
       <div className="text-center z-[100] p-4">
         <input 
           type="text" 
-          className='py-3 px-6 w-[700px] mt-10 text-lg rounded-full text-black placeholder:text-gray-700 focus:outline-none bg-white/45 shadow-md'  
+          className='py-3 px-6 w-[700px] mt-48 text-lg rounded-full text-black placeholder:text-gray-700 focus:outline-none bg-white/45 shadow-md'  
           value={location}
           placeholder='Enter the location' 
           onChange={(event) => setLocation(event.target.value)}
